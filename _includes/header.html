@@ -2,9 +2,8 @@
 
   <div class="Header-banner u-background-50">
     <div class="Header-owner Headroom-hideme u-border-bottom-xxs">
-      <a href="{{ site.owner_link }}"><span>{{ site.owner }} <span class="u-hidden u-md-inline u-lg-inline u-sm-inline">
-        - {{ site.owner_desc }}</span></span></a> {% include lang_switch.html %}
-
+      <a href="{{ site.owner_link }}"><span>{{ site.owner }}</span></a>
+      {% include lang_switch.html %}
     </div>
   </div>
 
@@ -40,22 +39,6 @@
       {% endif %}
 
       <div class="Header-utils Grid-cell">
-        <div class="Header-social Headroom-hideme">
-          <p>{{ t.follow_us | capitalize }}</p>
-          <ul class="Header-socialIcons">
-            {% for social in site.data.social %}
-            <li><a href="{{ social[1].link }}" title="{{ social[1].name }}"><span class="Icon-{{ social[0] }}"></span>
-                <span class="u-hiddenVisually">{{ social[1].name | capitalize }}</span></a></li>
-            {% endfor %}
-          </ul>
-        </div>
-
-        {% if include.hasSearch %}
-        <div class="Header-search" id="header-search">
-          {% include search_form.html %}
-        </div>
-        {% endif %}
-
       </div>
 
       <div class="Header-toggle Grid-cell">

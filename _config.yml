@@ -16,10 +16,10 @@
 
 email: example@example.com
 description: Digital Citizenship
+title: Digital Citizenship
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+lang: en
 
 # Build settings
 markdown: kramdown
@@ -33,6 +33,7 @@ exclude:
 
 # Custom vars
 theme_color: "#0066cc"
+css_theme: t-Pac
 owner: AgID - Team Digitale
 logo: http://designer.italia.it/images/loghi/logo-it.svg
 
