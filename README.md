@@ -1,2 +1,1 @@
-# cittadinanza-digitale
-Work in progress
+# ita-jekyll
