@@ -4,7 +4,15 @@
     
     <url>
      <loc>None/</loc>
-     <lastmod>2017-07-15</lastmod>
+     <lastmod>2017-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>None/api-notes/</loc>
+     <lastmod>2017-07-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
