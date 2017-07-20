@@ -289,6 +289,20 @@ https://github.com/apigee-127/swagger-tools/issues/335</p>
 need to compile the java version of swagger-codegen: see
 <a href="https://github.com/apigee-127/swagger-tools/blob/master/docs/QuickStart.md"><em>https://github.com/apigee-127/swagger-tools/blob/master/docs/QuickStart.md</em></a></p>
 <p>You'd better start with swagger-tools or swagger-node directly.</p>
+<h3 id="swagger-tools">swagger-tools</h3>
+<p>swagger-node uses swagger-tools to set up its server.
+Anyway, swagger-tools can be used standalone (without the bagpipes boilerplate):</p>
+<p>https://github.com/apigee-127/swagger-tools/blob/master/docs/QuickStart.md</p>
+<h3 id="swagger-express-middleware">swagger-express-middleware</h3>
+<p>https://github.com/BigstickCarpet/swagger-express-middleware</p>
+<p>Is a modern (unofficial) version of swagger-tools for express
+(while swagger-tools are targeted as a connect middleware).</p>
+<p>The project seems better maintained and popular than swagger-tools (~300k downloads on npm).
+It lacks the routing middleware (so you have to use it with something like <a href="https://www.npmjs.com/package/swagger-routes">swagger-routes</a>).</p>
+<p>It has an in-memory database to test mocked resources.</p>
+<h3 id="swagger-server">swagger-server</h3>
+<p>Uses swagger-express-middleware to implement a server (like swagger-node does with swagger-tools).
+It provides the express routing middleware that swagger-express-middleware lacks.</p>
 <h3 id="loopback-swagger-generator">loopback-swagger-generator</h3>
 <p>https://loopback.io/doc/en/lb3/Swagger-generator.html</p>
 <p>Generates routes and models (for persistence) from swagger specs.</p>
