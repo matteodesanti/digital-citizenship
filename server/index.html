@@ -68,7 +68,7 @@
                 
                     <li><a class="toctree-l4" href="#starting-the-mock-server">Starting the mock server</a></li>
                 
-                    <li><a class="toctree-l4" href="#calling-the-apis">Calling the APIs</a></li>
+                    <li><a class="toctree-l4" href="#testing-the-apis">Testing the APIs</a></li>
                 
                     <li><a class="toctree-l4" href="#running-the-documentation-website-locally">Running the documentation website locally</a></li>
                 
@@ -126,22 +126,32 @@
 in addition to the API documentation, you can download and use a NodeJS (express)
 HTTP server which implements the APIs based on the OpenAPI specifications.</p>
 <h2 id="downloading-the-test-environment">Downloading the test environment</h2>
-<p>Start cloning the GitHub repository:</p>
-<p><code>git clone http://github.com/teamdigitale/cittadinanza-digitale</code>
-<code>cd cittadinanza-digitale</code>
-<code>npm install</code></p>
+<p>Start with cloning the GitHub repository:</p>
+<pre><code>git clone http://github.com/teamdigitale/cittadinanza-digitale
+cd cittadinanza-digitale
+npm install
+</code></pre>
+
 <h2 id="starting-the-mock-server">Starting the mock server</h2>
 <p>Type</p>
 <p><code>npm run serve</code></p>
 <p>to run the test environment with preloaded fixtures (ie. sample fake user data)
 and a in-memory database that lets you play with the APIs.</p>
 <p>Two HTTP server are started on differents ports: one serves the Preferences API
-while the other one serves the Notifications API.</p>
-<h2 id="calling-the-apis">Calling the APIs</h2>
-<p>Once the servers are running you can start calling the remote (HTTP) API methods
-though a tool like <a href="https://www.getpostman.com/">Postman</a> or with the help of
-the embedded interface (swagger-editor):</p>
-<p><code>npm run edit</code></p>
+while the other one serves the Notifications API:</p>
+<pre><code>Serving ../docs/api/preferences.yaml API on http://localhost:10011
+Serving ../docs/api/notifications-public.yaml API on http://localhost:10010
+</code></pre>
+
+<h2 id="testing-the-apis">Testing the APIs</h2>
+<p>Once the servers are running you can start calling the REST API methods
+sending HTTP requests though a tool like <a href="https://www.getpostman.com/">Postman</a>.</p>
+<p>As an alternative you may use the web gui (Swagger UI)
+which starts with the API server(s):</p>
+<pre><code>Swagger UI runs at http://localhost:10011/swagger-ui
+Swagger UI runs at http://localhost:10010/swagger-ui
+</code></pre>
+
 <h2 id="running-the-documentation-website-locally">Running the documentation website locally</h2>
 <p>To run the documentation hub locally:</p>
 <p><code>mkdocs serve</code> to run documentation site locally

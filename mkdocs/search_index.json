@@ -37,7 +37,7 @@
         },
         {
             "location": "/server/",
-            "text": "Playing with the API\n\n\nIf you want to experience API usage in a test environment,\nin addition to the API documentation, you can download and use a NodeJS (express)\nHTTP server which implements the APIs based on the OpenAPI specifications.\n\n\nDownloading the test environment\n\n\nStart cloning the GitHub repository:\n\n\ngit clone http://github.com/teamdigitale/cittadinanza-digitale\n\n\ncd cittadinanza-digitale\n\n\nnpm install\n\n\nStarting the mock server\n\n\nType\n\n\nnpm run serve\n\n\nto run the test environment with preloaded fixtures (ie. sample fake user data)\nand a in-memory database that lets you play with the APIs.\n\n\nTwo HTTP server are started on differents ports: one serves the Preferences API\nwhile the other one serves the Notifications API.\n\n\nCalling the APIs\n\n\nOnce the servers are running you can start calling the remote (HTTP) API methods\nthough a tool like \nPostman\n or with the help of\nthe embedded interface (swagger-editor):\n\n\nnpm run edit\n\n\nRunning the documentation website locally\n\n\nTo run the documentation hub locally:\n\n\nmkdocs serve\n to run documentation site locally\n\nmkdocs gh-deploy\n to deploy docs to gh-pages",
+            "text": "Playing with the API\n\n\nIf you want to experience API usage in a test environment,\nin addition to the API documentation, you can download and use a NodeJS (express)\nHTTP server which implements the APIs based on the OpenAPI specifications.\n\n\nDownloading the test environment\n\n\nStart with cloning the GitHub repository:\n\n\ngit clone http://github.com/teamdigitale/cittadinanza-digitale\ncd cittadinanza-digitale\nnpm install\n\n\n\n\nStarting the mock server\n\n\nType\n\n\nnpm run serve\n\n\nto run the test environment with preloaded fixtures (ie. sample fake user data)\nand a in-memory database that lets you play with the APIs.\n\n\nTwo HTTP server are started on differents ports: one serves the Preferences API\nwhile the other one serves the Notifications API:\n\n\nServing ../docs/api/preferences.yaml API on http://localhost:10011\nServing ../docs/api/notifications-public.yaml API on http://localhost:10010\n\n\n\n\nTesting the APIs\n\n\nOnce the servers are running you can start calling the REST API methods\nsending HTTP requests though a tool like \nPostman\n.\n\n\nAs an alternative you may use the web gui (Swagger UI)\nwhich starts with the API server(s):\n\n\nSwagger UI runs at http://localhost:10011/swagger-ui\nSwagger UI runs at http://localhost:10010/swagger-ui\n\n\n\n\nRunning the documentation website locally\n\n\nTo run the documentation hub locally:\n\n\nmkdocs serve\n to run documentation site locally\n\nmkdocs gh-deploy\n to deploy docs to gh-pages",
             "title": "API playground"
         },
         {
@@ -47,18 +47,18 @@
         },
         {
             "location": "/server/#downloading-the-test-environment",
-            "text": "Start cloning the GitHub repository:  git clone http://github.com/teamdigitale/cittadinanza-digitale  cd cittadinanza-digitale  npm install",
+            "text": "Start with cloning the GitHub repository:  git clone http://github.com/teamdigitale/cittadinanza-digitale\ncd cittadinanza-digitale\nnpm install",
             "title": "Downloading the test environment"
         },
         {
             "location": "/server/#starting-the-mock-server",
-            "text": "Type  npm run serve  to run the test environment with preloaded fixtures (ie. sample fake user data)\nand a in-memory database that lets you play with the APIs.  Two HTTP server are started on differents ports: one serves the Preferences API\nwhile the other one serves the Notifications API.",
+            "text": "Type  npm run serve  to run the test environment with preloaded fixtures (ie. sample fake user data)\nand a in-memory database that lets you play with the APIs.  Two HTTP server are started on differents ports: one serves the Preferences API\nwhile the other one serves the Notifications API:  Serving ../docs/api/preferences.yaml API on http://localhost:10011\nServing ../docs/api/notifications-public.yaml API on http://localhost:10010",
             "title": "Starting the mock server"
         },
         {
-            "location": "/server/#calling-the-apis",
-            "text": "Once the servers are running you can start calling the remote (HTTP) API methods\nthough a tool like  Postman  or with the help of\nthe embedded interface (swagger-editor):  npm run edit",
-            "title": "Calling the APIs"
+            "location": "/server/#testing-the-apis",
+            "text": "Once the servers are running you can start calling the REST API methods\nsending HTTP requests though a tool like  Postman .  As an alternative you may use the web gui (Swagger UI)\nwhich starts with the API server(s):  Swagger UI runs at http://localhost:10011/swagger-ui\nSwagger UI runs at http://localhost:10010/swagger-ui",
+            "title": "Testing the APIs"
         },
         {
             "location": "/server/#running-the-documentation-website-locally",
