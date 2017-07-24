@@ -11,6 +11,14 @@
 
     
     <url>
+     <loc>None/server/</loc>
+     <lastmod>2017-07-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
      <loc>None/api-notes/</loc>
      <lastmod>2017-07-24</lastmod>
      <changefreq>daily</changefreq>
