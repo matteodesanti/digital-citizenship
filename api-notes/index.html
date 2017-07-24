@@ -268,20 +268,38 @@ npm install --save https://github.com/fhoek/swagmock
 <a href="https://www.npmjs.com/package/swagger-routes"><em>https://www.npmjs.com/package/swagger-routes</em></a></p>
 <p>without using swaggerize.</p>
 <h3 id="swagger-node">swagger-node</h3>
-<p>Based on “swagger tools”.</p>
+<p>Based on <a href="https://github.com/apigee-127/sway">sway</a> AND <a href="https://github.com/apigee-127/swagger-tools">swagger-tools</a>.</p>
+<p>Sway (aside sway-connect middleware) was supposed to supersede swagger-tools,
+but has it lacks feature parity (and a good documentation), swagger-node falls back
+to swagger-tools for some tasks (mostly, validation).</p>
 <p>If you want to use it in mock mode you MUST add for every path the directive:</p>
 <pre><code>&quot;x-swagger-router-controller&quot;: &quot;controllerName&quot;
 </code></pre>
 
 <p>see
 <a href="https://github.com/swagger-api/swagger-node/issues/342"><em>https://github.com/swagger-api/swagger-node/issues/342</em></a></p>
-<p>Does not emit fake data, but you can write custom controllers to mock it.
+<p>swagger-node can emit some fake data (simple strings), but you can write custom controllers to mock it.
 This activity is <strong>mandatory</strong> whenever there is a validation on the field format (ie. an email field)
-otherwise the response object will fail validation.</p>
-<p>swagger-node makes heavy use of <a href="https://github.com/apigee-127/bagpipes">bagpipes</a>, a weird
+otherwise the response object will fail validation (when responses validation is on).</p>
+<p>swagger-node (swagger-tools) makes use of <a href="https://github.com/apigee-127/bagpipes">bagpipes</a>, a weird
 framework to code in YAML things you'd better write in Javascript.</p>
+<p>There are a lot of gotchas using swagger-node and the documentation is poor.</p>
 <p>As <a href="https://github.com/apigee-127/swagger-tools">swagger-tools</a> swagger-node seems <strong>deprecated / unmantained</strong>:<br />
-https://github.com/apigee-127/swagger-tools/issues/335</p>
+https://github.com/apigee-127/swagger-tools/issues/335.</p>
+<p>It does not support <a href="https://github.com/apigee-127/swagger-tools/issues/227">$ref to relative path</a>,
+so you MUST use <a href="https://github.com/whitlockjc/json-refs">json-refs</a> to resolve them
+before plugging the express middleware.</p>
+<p>If you have multiple spec files, you MUST start one HTTP (API) server for each one
+or using different mount points, see https://github.com/apigee-127/swagger-tools/issues/126.</p>
+<p>To change default location of spec files (<code>api/swagger/swagger.yaml</code>) you MUST set an
+environment variable before running the swagger cli, see https://github.com/swagger-api/swagger-node/issues/373.</p>
+<p>Swagger Editor 3.x (the tool that starts executing <code>swagger project edit</code>) does not support
+$references to local files (see https://github.com/swagger-api/swagger-editor/issues/1409). The older 2.x
+release supports them, but you MUST set the configuration option <code>pointerResolutionBasePath</code> eventually through
+the environment variable <code>swagger_swagger_editorConfig_pointerResolutionBasePath</code>.</p>
+<p>To handle validation of responses you MUST set a NodeJS listener on the swagger-node-runner
+before starting the server, see https://github.com/theganyo/swagger-node-runner/releases/tag/v0.6.4
+for a working example.</p>
 <h3 id="swagger-codegen">swagger-codegen</h3>
 <p><a href="https://github.com/swagger-api/swagger-codegen"><em>https://github.com/swagger-api/swagger-codegen</em></a></p>
 <p>Needs java + maven. Does not generate mock data.</p>
