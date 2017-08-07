@@ -17,22 +17,112 @@
         },
         {
             "location": "/#communications",
-            "text": "Administrations will be able to submit multichannel notifications (SMS, E-mail, PUSH Notification, etc.) to citizens who have subscribed to a special topic of interest (opt-in) on PA portals, and/or have indicated one or more delivery contacts to receive alerts from the Public Administration (eg deadlines, payments, status changes of a forwarded practice, etc.).  The citizen interacts with a single preference management service (SGP) that will be queried by the SdA at the time of forwarding a notice to find the preferred forwarding channels and the recipient's contact addresses.\nThe citizen therefore has no direct access to the system: the information systems of the parties involved in the service will be able to send alerts to the citizens through the provided API.  Related APIs   Notifications API",
+            "text": "Administrations will be able to submit multichannel notifications (SMS, E-mail, PUSH Notification, etc.) to citizens who have subscribed to a special topic of interest (opt-in) on PA portals, and/or have indicated one or more delivery contacts to receive alerts from the Public Administration (eg deadlines, payments, status changes of a forwarded practice, etc.).  The citizen interacts with a single preference management service (SGP) that will be queried by the SdA at the time of forwarding a notice to find the preferred forwarding channels and the recipient's contact addresses.\nThe citizen therefore has no direct access to the system: the information systems of the parties involved in the service will be able to send alerts to the citizens through the provided API.",
             "title": "Communications"
         },
         {
+            "location": "/#related-apis",
+            "text": "Notifications API",
+            "title": "Related APIs"
+        },
+        {
             "location": "/#preferences",
-            "text": "The Preferences Management System (SGP) allows the citizen to centrally manage his personalization settings related to digital services provided by the Public Administration. Eg:   One or more addresses to receive communications from the alert system  Communication channels and subscription typologies (subscriptions)  Preferred payment methods (pagoPA)   Through this information, SGP provides the consulting authorities with the opportunity to customize their digital services. Citizens do not have direct access to the system: administration information systems use the API to access (read) the attributes managed by the SGP on behalf of citizens authenticating on their digital services.  Related APIs   Preferences API",
+            "text": "The Preferences Management System (SGP) allows the citizen to centrally manage his personalization settings related to digital services provided by the Public Administration. Eg:   One or more addresses to receive communications from the alert system  Communication channels and subscription typologies (subscriptions)  Preferred payment methods (pagoPA)   Through this information, SGP provides the consulting authorities with the opportunity to customize their digital services. Citizens do not have direct access to the system: administration information systems use the API to access (read) the attributes managed by the SGP on behalf of citizens authenticating on their digital services.",
             "title": "Preferences"
         },
         {
+            "location": "/#related-apis_1",
+            "text": "Preferences API",
+            "title": "Related APIs"
+        },
+        {
             "location": "/#advantages",
-            "text": "For citizens   Manage delivery contacts from a central access point (APP mobile and italia.it website)  Manage subscriptions (opt-in and opt-out) from a central access point  Access the communications history from a central access point  Make simple transactional operations by means of notifications received (ie. payments)   For administrations   Send electronic communications even without knowing the contact addresses of citizens, using only their fiscal code  Delegate the management and updating of citizens' electronic delivery contacts  Give more visibility to your notifications, where they come together in a wider / national context  Soliciting deadlines and facilitating payments in a simple and safe way  Transmit multi-channel communications for free  Assign status to communications (eg to track the status of a practice)  Get the delivery status (sent, received) of the communication and possibly reading the message where the channel allows it",
+            "text": "",
             "title": "Advantages"
+        },
+        {
+            "location": "/#for-citizens",
+            "text": "Manage delivery contacts from a central access point (APP mobile and italia.it website)  Manage subscriptions (opt-in and opt-out) from a central access point  Access the communications history from a central access point  Make simple transactional operations by means of notifications received (ie. payments)",
+            "title": "For citizens"
+        },
+        {
+            "location": "/#for-administrations",
+            "text": "Send electronic communications even without knowing the contact addresses of citizens, using only their fiscal code  Delegate the management and updating of citizens' electronic delivery contacts  Give more visibility to your notifications, where they come together in a wider / national context  Soliciting deadlines and facilitating payments in a simple and safe way  Transmit multi-channel communications for free  Assign status to communications (eg to track the status of a practice)  Get the delivery status (sent, received) of the communication and possibly reading the message where the channel allows it",
+            "title": "For administrations"
         },
         {
             "location": "/#api-docs",
             "text": "Notifications API  Preferences API",
+            "title": "API docs"
+        },
+        {
+            "location": "/index.it/",
+            "text": "Cittadinanza digitale\n\n\nIntroduzione\n\n\nL'iniziativa di Cittadinanza digitale mira ad agevolare la relazione tra i cittadini e la Pubblica Amministrazione (PA) attraverso la creazione di una piattaforma di componenti riutilizzabili in grado di rendere i servizi digitali pi\u00f9 efficaci e migliorare la comunicazione cittadino-PA.\n\n\nI componenti vengono riutilizzati dalle amministrazioni che erogano servizi digitali al fine di garantire un'esperienza utente coerente nonch\u00e9 risparmiare sull'effort richiesto da un'implementazione \ntout-court\n di tali tecnologie trasversali.\n\n\n\n\n\nComponenti della Cittadinanza digitale\n\n\n\n\n\n\n\u00a0\u00a0\n Identit\u00e0 \n\n\u00a0\u00a0\n Preferenze \n\n\u00a0\u00a0\n Comunicazioni \n\n\u00a0\u00a0\n Transazioni finanziarie \n\n\u00a0\u00a0\n Archiviazione \n\n\n\n\n\n\n\n\n\n\u00a0\u00a0\n Credenziali e informazioni personali (SPID) \n\n\u00a0\u00a0\n Preferenze personali orizzontali (ad es. Lingua) e verticali (di un servizio specifico) \n\n\u00a0\u00a0\n Ricezione di avvisi di cortesia e notifiche legali \n\n\u00a0\u00a0\n Pagamenti e crediti (pagoPA) \n\n\u00a0\u00a0\n Archivio digitale di tutta la documentazione \n\n\n\n\n\n\n\n\n\nL'integrazione dei vari componenti nei servizi digitali forniti dalla Pubblica Amministrazione consentir\u00e0 al cittadino di vivere l'esperienza di cittadinanza digitale, portando la sua identit\u00e0 e le informazioni trasversalmente ai diversi servizi.\n\n\nOltre ai componenti esistenti (pagoPA, SPID), AgID intende fornire ulteriori servizi alle Pubbliche Amministrazioni realizzando i componenti della Cittadinanza Digitale in relazione alle 'Preferenze' dei cittadini e alle 'Comunicazioni' con la PA.\n\n\nComunicazioni\n\n\nLe amministrazioni saranno in grado di inviare notifiche multicanale (e-mail, notifiche PUSH, ecc.) ai cittadini che hanno sottoscritto un particolare argomento di interesse (opt-in) sui portali PA e/o hanno indicato uno o pi\u00f9 recapiti per ricevere avvisi dalla Pubblica Amministrazione (ad es. scadenze, pagamenti, cambiamenti di stato di una pratica inoltrata).\n\n\nIl cittadino interagisce con un unico servizio di gestione delle preferenze (SGP); questo verr\u00e0 interrogato dal sistema per l'invio delle comunicazioni al fine di reperire i canali di inoltro preferito e gli indirizzi di contatto del destinatario. Il cittadino non ha quindi accesso diretto al sistema: i sistemi informativi delle parti coinvolte nel servizio potranno inviare comunicazioni ai cittadini attraverso l'API fornita.\n\n\nLe amministrazioni avranno piena visibilit\u00e0 delle comunicazioni (e del loro stato), limitatamente a quelle di cui sono esse stesse i mittenti.\n\n\nAPI correlate\n\n\n\n\nAPI notifiche\n\n\n\n\nPreferenze\n\n\nIl sistema di gestione delle preferenze (SGP) consente al cittadino di gestire centralmente le impostazioni di personalizzazione relative ai servizi digitali forniti dalla Pubblica Amministrazione. Per esempio:\n\n\n\n\nUno o pi\u00f9 indirizzi per ricevere comunicazioni\n\n\nCanali di comunicazione e tipologie di sottoscrizione\n\n\nMetodi di pagamento preferiti (pagoPA)\n\n\n\n\nAttraverso queste informazioni, SGP fornisce alle amministrazioni che lo consultano l'opportunit\u00e0 di personalizzare i propri servizi digitali. I cittadini non hanno accesso diretto al sistema: i sistemi di amministrazione dell'amministrazione utilizzano l'API per accedere (leggere) gli attributi gestiti dal SGP per conto dei cittadini che si autenticano sui loro servizi digitali.\n\n\nAPI correlate\n\n\n\n\nPreferenze API\n\n\n\n\nVantaggi\n\n\nPer i cittadini\n\n\n\n\ngestire i contatti di consegna da un punto di accesso centrale (sito APP mobile e italia.it)\n\n\ngestire le sottoscrizioni (opt-in e opt-out) da un punto di accesso centrale\n\n\naccedere alla cronologia delle comunicazioni da un punto di accesso centrale\n\n\neffettuare semplici operazioni transazionali mediante notifiche ricevute (cio\u00e8 pagamenti)\n\n\n\n\nPer le amministrazioni\n\n\n\n\ninviare comunicazioni elettroniche anche senza conoscere gli indirizzi di contatto dei cittadini, utilizzando solo il codice fiscale\n\n\ndelegare la gestione e l'aggiornamento dei contatti di consegna elettronica dei cittadini\n\n\ndare maggiore visibilit\u00e0 alle proprie notifiche, laddove confluiscono in un contesto pi\u00f9 ampio / nazionale\n\n\nrichiamare le scadenze e facilitare i pagamenti in modo semplice e sicuro\n\n\ntrasmetta gratuitamente comunicazioni multicanale (email, push notification)\n\n\nassegnare uno stato alle comunicazioni (per esempio per monitorare lo stato di una pratica)\n\n\nottenere lo stato di consegna (inviato, ricevuto) della comunicazione e possibilmente la lettura del messaggio laddove il canale lo consente\n\n\n\n\nCasi d'uso\n\n\nAvvisi di cortesia\n\n\n\n\ninvio di promemoria (es. screening)\n\n\ninvio di scadenze (es. di un documento)\n\n\ncomunicazioni relative a nuove gare o contratti\n\n\ncomunicazioni scuola-famiglia\n\n\ncomunicazioni che contengono informazioni per pagamenti da effettuare tramite App od online (es. tributi ricorrenti, multe)\n\n\ncomunicazioni relative allo stato di un flusso di lavoro avviato per conto del cittadino (es. \"pratica presa in carico\", \"prenotazione accettata\") migliorando l'efficienza dei punti di contatto\n\n\n\n\nRoadmap\n\n\n\n\nprimo prototipo (\nclosed beta\n) con amministrazioni pilota per l'invio di avvisi di cortesia notificati via email o push notification\n\n\nintegrazione di altri canali di comunicazione (es. messaggistica istantanea, SMS, cartaceo)\n\n\nrealizzazione del domicilio digitale (elenco recapiti elettronici certificati)\n\n\ncifratura e firma dei messaggi\n\n\ninvio di notifiche a valore legale\n\n\n\n\nAPI docs\n\n\n\n\nAPI notifiche\n\n\nPreferenze API",
+            "title": "Home (ita)"
+        },
+        {
+            "location": "/index.it/#cittadinanza-digitale",
+            "text": "",
+            "title": "Cittadinanza digitale"
+        },
+        {
+            "location": "/index.it/#introduzione",
+            "text": "L'iniziativa di Cittadinanza digitale mira ad agevolare la relazione tra i cittadini e la Pubblica Amministrazione (PA) attraverso la creazione di una piattaforma di componenti riutilizzabili in grado di rendere i servizi digitali pi\u00f9 efficaci e migliorare la comunicazione cittadino-PA.  I componenti vengono riutilizzati dalle amministrazioni che erogano servizi digitali al fine di garantire un'esperienza utente coerente nonch\u00e9 risparmiare sull'effort richiesto da un'implementazione  tout-court  di tali tecnologie trasversali.   \nComponenti della Cittadinanza digitale   \n\u00a0\u00a0  Identit\u00e0  \n\u00a0\u00a0  Preferenze  \n\u00a0\u00a0  Comunicazioni  \n\u00a0\u00a0  Transazioni finanziarie  \n\u00a0\u00a0  Archiviazione      \n\u00a0\u00a0  Credenziali e informazioni personali (SPID)  \n\u00a0\u00a0  Preferenze personali orizzontali (ad es. Lingua) e verticali (di un servizio specifico)  \n\u00a0\u00a0  Ricezione di avvisi di cortesia e notifiche legali  \n\u00a0\u00a0  Pagamenti e crediti (pagoPA)  \n\u00a0\u00a0  Archivio digitale di tutta la documentazione      L'integrazione dei vari componenti nei servizi digitali forniti dalla Pubblica Amministrazione consentir\u00e0 al cittadino di vivere l'esperienza di cittadinanza digitale, portando la sua identit\u00e0 e le informazioni trasversalmente ai diversi servizi.  Oltre ai componenti esistenti (pagoPA, SPID), AgID intende fornire ulteriori servizi alle Pubbliche Amministrazioni realizzando i componenti della Cittadinanza Digitale in relazione alle 'Preferenze' dei cittadini e alle 'Comunicazioni' con la PA.",
+            "title": "Introduzione"
+        },
+        {
+            "location": "/index.it/#comunicazioni",
+            "text": "Le amministrazioni saranno in grado di inviare notifiche multicanale (e-mail, notifiche PUSH, ecc.) ai cittadini che hanno sottoscritto un particolare argomento di interesse (opt-in) sui portali PA e/o hanno indicato uno o pi\u00f9 recapiti per ricevere avvisi dalla Pubblica Amministrazione (ad es. scadenze, pagamenti, cambiamenti di stato di una pratica inoltrata).  Il cittadino interagisce con un unico servizio di gestione delle preferenze (SGP); questo verr\u00e0 interrogato dal sistema per l'invio delle comunicazioni al fine di reperire i canali di inoltro preferito e gli indirizzi di contatto del destinatario. Il cittadino non ha quindi accesso diretto al sistema: i sistemi informativi delle parti coinvolte nel servizio potranno inviare comunicazioni ai cittadini attraverso l'API fornita.  Le amministrazioni avranno piena visibilit\u00e0 delle comunicazioni (e del loro stato), limitatamente a quelle di cui sono esse stesse i mittenti.",
+            "title": "Comunicazioni"
+        },
+        {
+            "location": "/index.it/#api-correlate",
+            "text": "API notifiche",
+            "title": "API correlate"
+        },
+        {
+            "location": "/index.it/#preferenze",
+            "text": "Il sistema di gestione delle preferenze (SGP) consente al cittadino di gestire centralmente le impostazioni di personalizzazione relative ai servizi digitali forniti dalla Pubblica Amministrazione. Per esempio:   Uno o pi\u00f9 indirizzi per ricevere comunicazioni  Canali di comunicazione e tipologie di sottoscrizione  Metodi di pagamento preferiti (pagoPA)   Attraverso queste informazioni, SGP fornisce alle amministrazioni che lo consultano l'opportunit\u00e0 di personalizzare i propri servizi digitali. I cittadini non hanno accesso diretto al sistema: i sistemi di amministrazione dell'amministrazione utilizzano l'API per accedere (leggere) gli attributi gestiti dal SGP per conto dei cittadini che si autenticano sui loro servizi digitali.",
+            "title": "Preferenze"
+        },
+        {
+            "location": "/index.it/#api-correlate_1",
+            "text": "Preferenze API",
+            "title": "API correlate"
+        },
+        {
+            "location": "/index.it/#vantaggi",
+            "text": "",
+            "title": "Vantaggi"
+        },
+        {
+            "location": "/index.it/#per-i-cittadini",
+            "text": "gestire i contatti di consegna da un punto di accesso centrale (sito APP mobile e italia.it)  gestire le sottoscrizioni (opt-in e opt-out) da un punto di accesso centrale  accedere alla cronologia delle comunicazioni da un punto di accesso centrale  effettuare semplici operazioni transazionali mediante notifiche ricevute (cio\u00e8 pagamenti)",
+            "title": "Per i cittadini"
+        },
+        {
+            "location": "/index.it/#per-le-amministrazioni",
+            "text": "inviare comunicazioni elettroniche anche senza conoscere gli indirizzi di contatto dei cittadini, utilizzando solo il codice fiscale  delegare la gestione e l'aggiornamento dei contatti di consegna elettronica dei cittadini  dare maggiore visibilit\u00e0 alle proprie notifiche, laddove confluiscono in un contesto pi\u00f9 ampio / nazionale  richiamare le scadenze e facilitare i pagamenti in modo semplice e sicuro  trasmetta gratuitamente comunicazioni multicanale (email, push notification)  assegnare uno stato alle comunicazioni (per esempio per monitorare lo stato di una pratica)  ottenere lo stato di consegna (inviato, ricevuto) della comunicazione e possibilmente la lettura del messaggio laddove il canale lo consente",
+            "title": "Per le amministrazioni"
+        },
+        {
+            "location": "/index.it/#casi-duso",
+            "text": "",
+            "title": "Casi d'uso"
+        },
+        {
+            "location": "/index.it/#avvisi-di-cortesia",
+            "text": "invio di promemoria (es. screening)  invio di scadenze (es. di un documento)  comunicazioni relative a nuove gare o contratti  comunicazioni scuola-famiglia  comunicazioni che contengono informazioni per pagamenti da effettuare tramite App od online (es. tributi ricorrenti, multe)  comunicazioni relative allo stato di un flusso di lavoro avviato per conto del cittadino (es. \"pratica presa in carico\", \"prenotazione accettata\") migliorando l'efficienza dei punti di contatto",
+            "title": "Avvisi di cortesia"
+        },
+        {
+            "location": "/index.it/#roadmap",
+            "text": "primo prototipo ( closed beta ) con amministrazioni pilota per l'invio di avvisi di cortesia notificati via email o push notification  integrazione di altri canali di comunicazione (es. messaggistica istantanea, SMS, cartaceo)  realizzazione del domicilio digitale (elenco recapiti elettronici certificati)  cifratura e firma dei messaggi  invio di notifiche a valore legale",
+            "title": "Roadmap"
+        },
+        {
+            "location": "/index.it/#api-docs",
+            "text": "API notifiche  Preferenze API",
             "title": "API docs"
         },
         {
@@ -77,18 +167,113 @@
         },
         {
             "location": "/api-notes/#users-preferences",
-            "text": "SCIM  SCIM is a REST/API protocol for user provisioning:  http://www.simplecloud.info/  Producing a SCIM-compatbile API for user's preferences COULD\nbring some advantages.  What problems SCIM solves   Resources\u2019 Schema extensions (custom attributes)  Bulk operations (CRUD)  Search and fields filtering and sorting  Common User schema (w/SAML)  Users groups (schema)  Interoperable implementations (client and server)   SCIM References  https://tools.ietf.org/html/rfc7643  https://tools.ietf.org/html/rfc7644  https://tools.ietf.org/html/rfc7642     User preferences activity feed (changelog):  https://tools.ietf.org/html/draft-hunt-scim-notify-00  Activity feed reference implementation:  https://github.com/jirmauritz/scim-notification-hub  Who uses SCIM   Facebook  Oracle  CloudFoundry  Slack  Trello  GitHub  Microsoft   \u201cReady made\u201d implementations  http://www.simplecloud.info/#implementations      WSO2  OSIAM  Gluu      Maturity  ****  *  ***    Project activity  ***  *  ***    Documentation  ***  *  ***     WSO2 + charon  https://github.com/wso2/charon    current stable version (wso2 charon 2.1.0) does not support filters (user search) other than \u2018Eq\u2019    charon 3.x filtering is much more useful but maven archives has only 2.x:      https://mvnrepository.com/artifact/org.wso2.charon/org.wso2.charon.core    wso2 charon 3.x much more useful as library but you you have to provide the API layer and the persistence layer (UserManager) by yourself    missing docs about adding custom attributes    OSIAM  https://github.com/osiam/osiam    very poor documentation    very low activity in the last year    SCIM bulk actions not yet implemented    OSIAM does not yet support complex data types for extensions. According to docs \"The absence of this feature will be addressed in a future version\"    Gluu  https://www.gluu.org/gluu-server/   looks very good but cannot install on small vm",
+            "text": "",
             "title": "User\u2019s preferences"
         },
         {
+            "location": "/api-notes/#scim",
+            "text": "SCIM is a REST/API protocol for user provisioning:  http://www.simplecloud.info/  Producing a SCIM-compatbile API for user's preferences COULD\nbring some advantages.",
+            "title": "SCIM"
+        },
+        {
+            "location": "/api-notes/#what-problems-scim-solves",
+            "text": "Resources\u2019 Schema extensions (custom attributes)  Bulk operations (CRUD)  Search and fields filtering and sorting  Common User schema (w/SAML)  Users groups (schema)  Interoperable implementations (client and server)",
+            "title": "What problems SCIM solves"
+        },
+        {
+            "location": "/api-notes/#scim-references",
+            "text": "https://tools.ietf.org/html/rfc7643  https://tools.ietf.org/html/rfc7644  https://tools.ietf.org/html/rfc7642     User preferences activity feed (changelog):  https://tools.ietf.org/html/draft-hunt-scim-notify-00  Activity feed reference implementation:  https://github.com/jirmauritz/scim-notification-hub",
+            "title": "SCIM References"
+        },
+        {
+            "location": "/api-notes/#who-uses-scim",
+            "text": "Facebook  Oracle  CloudFoundry  Slack  Trello  GitHub  Microsoft",
+            "title": "Who uses SCIM"
+        },
+        {
+            "location": "/api-notes/#ready-made-implementations",
+            "text": "http://www.simplecloud.info/#implementations      WSO2  OSIAM  Gluu      Maturity  ****  *  ***    Project activity  ***  *  ***    Documentation  ***  *  ***",
+            "title": "\u201cReady made\u201d implementations"
+        },
+        {
+            "location": "/api-notes/#wso2-charon",
+            "text": "https://github.com/wso2/charon    current stable version (wso2 charon 2.1.0) does not support filters (user search) other than \u2018Eq\u2019    charon 3.x filtering is much more useful but maven archives has only 2.x:      https://mvnrepository.com/artifact/org.wso2.charon/org.wso2.charon.core    wso2 charon 3.x much more useful as library but you you have to provide the API layer and the persistence layer (UserManager) by yourself    missing docs about adding custom attributes",
+            "title": "WSO2 + charon"
+        },
+        {
+            "location": "/api-notes/#osiam",
+            "text": "https://github.com/osiam/osiam    very poor documentation    very low activity in the last year    SCIM bulk actions not yet implemented    OSIAM does not yet support complex data types for extensions. According to docs \"The absence of this feature will be addressed in a future version\"",
+            "title": "OSIAM"
+        },
+        {
+            "location": "/api-notes/#gluu",
+            "text": "https://www.gluu.org/gluu-server/   looks very good but cannot install on small vm",
+            "title": "Gluu"
+        },
+        {
             "location": "/api-notes/#notifications-api",
-            "text": "Existing APIs for messaging    https://firebase.google.com/docs/cloud-messaging/send-message    https://github.com/alphagov/notifications-api    https://docs.nylas.com/reference    https://www.mailgun.com/    https://context.io/    Handling subscriptions (opt-in / opt-out)  To store subscriptions data (opt-in / opt-out) we can associate a\nblacklist for every user in the system.  If we use SCIM we MUST add an extension to the SCIM core schema.  optOut: [\n{\n  organization_id: <id>,\n  topics: [ t1, t2, ... ]\n}]  where  organization_id  is the identifier of the senders blocked by\nusers for some specific topics.",
+            "text": "",
             "title": "Notifications API"
         },
         {
+            "location": "/api-notes/#existing-apis-for-messaging",
+            "text": "https://firebase.google.com/docs/cloud-messaging/send-message    https://github.com/alphagov/notifications-api    https://docs.nylas.com/reference    https://www.mailgun.com/    https://context.io/",
+            "title": "Existing APIs for messaging"
+        },
+        {
+            "location": "/api-notes/#handling-subscriptions-opt-in-opt-out",
+            "text": "To store subscriptions data (opt-in / opt-out) we can associate a\nblacklist for every user in the system.  If we use SCIM we MUST add an extension to the SCIM core schema.  optOut: [\n{\n  organization_id: <id>,\n  topics: [ t1, t2, ... ]\n}]  where  organization_id  is the identifier of the senders blocked by\nusers for some specific topics.",
+            "title": "Handling subscriptions (opt-in / opt-out)"
+        },
+        {
             "location": "/api-notes/#openapis-mocking",
-            "text": "swaggerize  https://github.com/krakenjs/swaggerize-express  Mocks come from \u201cswagmock\u201d, but only this fork of swagmock: https://github.com/fhoek/swagmock \nsupports \" allOf \" OpenAPI operator, so you MUST use this version and\nnot the one that comes from the original package.json in order to make it work:  cat users.json |sed -e 's/faker/x\\\\-faker/' &gt; .tmp && mv .tmp users.json\nnpm install --save https://github.com/fhoek/swagmock  json-schema-faker  https://github.com/json-schema-faker/json-schema-faker  Supports swagger format and generates 1 json with fake data for each endpoint  You can use it directly with https://www.npmjs.com/package/swagger-routes  without using swaggerize.  swagger-node  Based on  sway  AND  swagger-tools .  Sway (aside sway-connect middleware) was supposed to supersede swagger-tools,\nbut has it lacks feature parity (and a good documentation), swagger-node falls back\nto swagger-tools for some tasks (mostly, validation).  If you want to use it in mock mode you MUST add for every path the directive:  \"x-swagger-router-controller\": \"controllerName\"  see https://github.com/swagger-api/swagger-node/issues/342  swagger-node can emit some fake data (simple strings), but you can write custom controllers to mock it.\nThis activity is  mandatory  whenever there is a validation on the field format (ie. an email field)\notherwise the response object will fail validation (when responses validation is on).  swagger-node (swagger-tools) makes use of  bagpipes , a weird\nframework to code in YAML things you'd better write in Javascript.  There are a lot of gotchas using swagger-node and the documentation is poor.  As  swagger-tools  swagger-node seems  deprecated / unmantained : \nhttps://github.com/apigee-127/swagger-tools/issues/335.  It does not support  $ref to relative path ,\nso you MUST use  json-refs  to resolve them\nbefore plugging the express middleware.  If you have multiple spec files, you MUST start one HTTP (API) server for each one\nor using different mount points, see https://github.com/apigee-127/swagger-tools/issues/126.  To change default location of spec files ( api/swagger/swagger.yaml ) you MUST set an\nenvironment variable before running the swagger cli, see https://github.com/swagger-api/swagger-node/issues/373.  Swagger Editor 3.x (the tool that starts executing  swagger project edit ) does not support\n$references to local files (see https://github.com/swagger-api/swagger-editor/issues/1409). The older 2.x\nrelease supports them, but you MUST set the configuration option  pointerResolutionBasePath  eventually through\nthe environment variable  swagger_swagger_editorConfig_pointerResolutionBasePath .  To handle validation of responses you MUST set a NodeJS listener on the swagger-node-runner\nbefore starting the server, see https://github.com/theganyo/swagger-node-runner/releases/tag/v0.6.4\nfor a working example.  swagger-codegen  https://github.com/swagger-api/swagger-codegen  Needs java + maven. Does not generate mock data.  Uses swagger-tools which, when used standalone, remove the\nneed to compile the java version of swagger-codegen: see https://github.com/apigee-127/swagger-tools/blob/master/docs/QuickStart.md  You'd better start with swagger-tools or swagger-node directly.  swagger-tools  swagger-node uses swagger-tools to set up its server.\nAnyway, swagger-tools can be used standalone (without the bagpipes boilerplate):  https://github.com/apigee-127/swagger-tools/blob/master/docs/QuickStart.md  swagger-express-middleware  https://github.com/BigstickCarpet/swagger-express-middleware  Is a modern (unofficial) version of swagger-tools for express\n(while swagger-tools are targeted as a connect middleware).  The project seems better maintained and popular than swagger-tools (~300k downloads on npm).\nIt lacks the routing middleware (so you have to use it with something like  swagger-routes ).  It has an in-memory database to test mocked resources.  swagger-server  Uses swagger-express-middleware to implement a server (like swagger-node does with swagger-tools).\nIt provides the express routing middleware that swagger-express-middleware lacks.  loopback-swagger-generator  https://loopback.io/doc/en/lb3/Swagger-generator.html  Generates routes and models (for persistence) from swagger specs.  Prism  http://stoplight.io/platform/prism/  It\u2019s a free mock Swagger server from Spotlight.io. The bad part is you\nMUST embed some javascript code inside the Swagger specs to customize\ncontrollers, which is not ideal.",
+            "text": "",
             "title": "OpenAPIs mocking"
+        },
+        {
+            "location": "/api-notes/#swaggerize",
+            "text": "https://github.com/krakenjs/swaggerize-express  Mocks come from \u201cswagmock\u201d, but only this fork of swagmock: https://github.com/fhoek/swagmock \nsupports \" allOf \" OpenAPI operator, so you MUST use this version and\nnot the one that comes from the original package.json in order to make it work:  cat users.json |sed -e 's/faker/x\\\\-faker/' &gt; .tmp && mv .tmp users.json\nnpm install --save https://github.com/fhoek/swagmock",
+            "title": "swaggerize"
+        },
+        {
+            "location": "/api-notes/#json-schema-faker",
+            "text": "https://github.com/json-schema-faker/json-schema-faker  Supports swagger format and generates 1 json with fake data for each endpoint  You can use it directly with https://www.npmjs.com/package/swagger-routes  without using swaggerize.",
+            "title": "json-schema-faker"
+        },
+        {
+            "location": "/api-notes/#swagger-node",
+            "text": "Based on  sway  AND  swagger-tools .  Sway (aside sway-connect middleware) was supposed to supersede swagger-tools,\nbut has it lacks feature parity (and a good documentation), swagger-node falls back\nto swagger-tools for some tasks (mostly, validation).  If you want to use it in mock mode you MUST add for every path the directive:  \"x-swagger-router-controller\": \"controllerName\"  see https://github.com/swagger-api/swagger-node/issues/342  swagger-node can emit some fake data (simple strings), but you can write custom controllers to mock it.\nThis activity is  mandatory  whenever there is a validation on the field format (ie. an email field)\notherwise the response object will fail validation (when responses validation is on).  swagger-node (swagger-tools) makes use of  bagpipes , a weird\nframework to code in YAML things you'd better write in Javascript.  There are a lot of gotchas using swagger-node and the documentation is poor.  As  swagger-tools  swagger-node seems  deprecated / unmantained : \nhttps://github.com/apigee-127/swagger-tools/issues/335.  It does not support  $ref to relative path ,\nso you MUST use  json-refs  to resolve them\nbefore plugging the express middleware.  If you have multiple spec files, you MUST start one HTTP (API) server for each one\nor using different mount points, see https://github.com/apigee-127/swagger-tools/issues/126.  To change default location of spec files ( api/swagger/swagger.yaml ) you MUST set an\nenvironment variable before running the swagger cli, see https://github.com/swagger-api/swagger-node/issues/373.  Swagger Editor 3.x (the tool that starts executing  swagger project edit ) does not support\n$references to local files (see https://github.com/swagger-api/swagger-editor/issues/1409). The older 2.x\nrelease supports them, but you MUST set the configuration option  pointerResolutionBasePath  eventually through\nthe environment variable  swagger_swagger_editorConfig_pointerResolutionBasePath .  To handle validation of responses you MUST set a NodeJS listener on the swagger-node-runner\nbefore starting the server, see https://github.com/theganyo/swagger-node-runner/releases/tag/v0.6.4\nfor a working example.",
+            "title": "swagger-node"
+        },
+        {
+            "location": "/api-notes/#swagger-codegen",
+            "text": "https://github.com/swagger-api/swagger-codegen  Needs java + maven. Does not generate mock data.  Uses swagger-tools which, when used standalone, remove the\nneed to compile the java version of swagger-codegen: see https://github.com/apigee-127/swagger-tools/blob/master/docs/QuickStart.md  You'd better start with swagger-tools or swagger-node directly.",
+            "title": "swagger-codegen"
+        },
+        {
+            "location": "/api-notes/#swagger-tools",
+            "text": "swagger-node uses swagger-tools to set up its server.\nAnyway, swagger-tools can be used standalone (without the bagpipes boilerplate):  https://github.com/apigee-127/swagger-tools/blob/master/docs/QuickStart.md",
+            "title": "swagger-tools"
+        },
+        {
+            "location": "/api-notes/#swagger-express-middleware",
+            "text": "https://github.com/BigstickCarpet/swagger-express-middleware  Is a modern (unofficial) version of swagger-tools for express\n(while swagger-tools are targeted as a connect middleware).  The project seems better maintained and popular than swagger-tools (~300k downloads on npm).\nIt lacks the routing middleware (so you have to use it with something like  swagger-routes ).  It has an in-memory database to test mocked resources.",
+            "title": "swagger-express-middleware"
+        },
+        {
+            "location": "/api-notes/#swagger-server",
+            "text": "Uses swagger-express-middleware to implement a server (like swagger-node does with swagger-tools).\nIt provides the express routing middleware that swagger-express-middleware lacks.",
+            "title": "swagger-server"
+        },
+        {
+            "location": "/api-notes/#loopback-swagger-generator",
+            "text": "https://loopback.io/doc/en/lb3/Swagger-generator.html  Generates routes and models (for persistence) from swagger specs.",
+            "title": "loopback-swagger-generator"
+        },
+        {
+            "location": "/api-notes/#prism",
+            "text": "http://stoplight.io/platform/prism/  It\u2019s a free mock Swagger server from Spotlight.io. The bad part is you\nMUST embed some javascript code inside the Swagger specs to customize\ncontrollers, which is not ideal.",
+            "title": "Prism"
         },
         {
             "location": "/api-notes/#guidelines",
