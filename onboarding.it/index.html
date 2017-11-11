@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Test the API (it) - Digital Citizenship</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Test the API (it)";
+    var mkdocs_page_input_path = "onboarding.it.md";
+    var mkdocs_page_url = "/onboarding.it/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Digital Citizenship</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../index.it/">Home (it)</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Test the API (it)</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#quick-start">Quick start</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#registrarsi-allambiente-di-test-delle-api">Registrarsi all'ambiente di test delle API</a></li>
+        
+            <li><a class="toctree-l3" href="#provare-le-api-tramite-il-portale-sviluppatori">Provare le API tramite il portale sviluppatori</a></li>
+        
+            <li><a class="toctree-l3" href="#generare-un-client-dalle-specifiche-openapi">Generare un client dalle specifiche OpenAPI</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Digital Citizenship</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Test the API (it)</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/teamdigitale/digital-citizenship/edit/master/docs/onboarding.it.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="quick-start">Quick start</h1>
+<h2 id="registrarsi-allambiente-di-test-delle-api">Registrarsi all'ambiente di test delle API</h2>
+<p>Puoi richiedere accesso da subito all'ambiente di test per le API,
+in modo da provare l'invio dei primi messaggi tramite il sistema di notifiche.</p>
+<p><a href="https://agid-apim-prod.portal.azure-api.net">Registrati sul portale sviluppatori</a> -&gt; "Sign up now"</p>
+<p>Ti verranno chieste le seguenti informazioni:</p>
+<ul>
+<li>un indirizzo email valido</li>
+<li>nome utente</li>
+<li>password</li>
+<li>nome</li>
+<li>cognome</li>
+<li>nome dell'amministrazione ("Organization") di appartenenza (verrà inserito nel contenuto dei messaggi inviati)</li>
+<li>nome del servizio in cui vuoi integrare le notifiche (es. "avvisi di scadenza")</li>
+<li>dipartimento (area) dell'amministrazione a cui afferisce il servizio di notifica</li>
+</ul>
+<p>Una volta avuto accesso al portale sviluppatori segui il link
+"Subscribe to the Digital Citizenship API" e attendi
+che la sottoscrizione venga attivata.</p>
+<p>Al momento dell'attivazione riceverai un'email.
+Da quel momento è possibile iniziare a utilizzare l'API in modalità di test.
+L'email contiene un codice fiscale "fittizio" tramite il quale potrai utilizzare
+l'<strong>API per l'invio di messaggi</strong> che ti verrano recapitati all'indirizzo
+email che hai fornito durante la registrazione.</p>
+<p>Fin quando sarà attiva la modalità di test, non potrai inviare messaggi
+a indirizzi diversi da quello verificato in fase di registrazione.</p>
+<h2 id="provare-le-api-tramite-il-portale-sviluppatori">Provare le API tramite il portale sviluppatori</h2>
+<p>Tramite il developer portal è possibile:</p>
+<ul>
+<li>consultare le spefiche delle API (OpenAPI / Swagger)</li>
+<li>visualizzare l'API-key, necessaria per utilizzare le API</li>
+<li>provare a inviare messaggi tramite l'<a href="https://agid-apim-prod.portal.azure-api.net/docs/services/digital-citizenship-api">interfaccia grafica</a></li>
+</ul>
+<p>L'account di test è limitato all'utilizzo dell'API di invio dei messaggi ("submitMessage");
+sarà necessario fornire in input il codice fiscale ottenuto durante la registrazione.</p>
+<p>Nella <a href="https://agid-apim-prod.portal.azure-api.net/developer">pagina con i dati relativi al tuo account</a>
+troverai l'Api-Key ("Primary key") che è necessario utilizzare per autenticarsi alle API.</p>
+<p><img alt="sign-up" src="../assets/3-apikey.PNG" /></p>
+<h2 id="generare-un-client-dalle-specifiche-openapi">Generare un client dalle specifiche OpenAPI</h2>
+<p>Esistono diversi tool open source per generare i client delle API nei diversi linguaggi
+di programmazione. Ad esempio tramite <a href="https://github.com/Azure/autorest">Autorest</a>, sviluppato da Microsoft,
+è possibile generare client in C#, Go, Java, Node.js, TypeScript, Python, Ruby and PHP.</p>
+<p><a href="https://agid-apim-prod.portal.azure-api.net/docs/services/digital-citizenship-api/export?DocumentFormat=Swagger">Specifiche OpenAPI per l'iniziativa di Cittadinanza Digitale</a></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../index.it/" class="btn btn-neutral" title="Home (it)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/teamdigitale/digital-citizenship" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../index.it/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+
+</body>
+</html>
