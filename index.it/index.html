@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Home (ita) - Digital Citizenship</title>
+  <title>Home (it) - Digital Citizenship</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,7 +17,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Home (ita)";
+    var mkdocs_page_name = "Home (it)";
     var mkdocs_page_input_path = "index.it.md";
     var mkdocs_page_url = "/index.it/";
   </script>
@@ -54,7 +54,7 @@
           
             <li class="toctree-l1 current">
 		
-    <a class="current" href="./">Home (ita)</a>
+    <a class="current" href="./">Home (it)</a>
     <ul class="subnav">
             
     <li class="toctree-l2"><a href="#cittadinanza-digitale">Cittadinanza digitale</a></li>
@@ -83,12 +83,7 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../server/">API playground</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../api-notes/">Notes</a>
+    <a class="" href="../onboarding.it/">Test the API (it)</a>
 	    </li>
           
         </ul>
@@ -113,10 +108,10 @@
     
       
     
-    <li>Home (ita)</li>
+    <li>Home (it)</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/teamdigitale/cittadinanza-digitale/edit/master/docs/index.it.md"
+        <a href="https://github.com/teamdigitale/digital-citizenship/edit/master/docs/index.it.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -160,10 +155,6 @@ Componenti della Cittadinanza digitale
 <p>Le amministrazioni saranno in grado di inviare notifiche multicanale (e-mail, notifiche PUSH, ecc.) ai cittadini che hanno sottoscritto un particolare argomento di interesse (opt-in) sui portali PA e/o hanno indicato uno o più recapiti per ricevere avvisi dalla Pubblica Amministrazione (ad es. scadenze, pagamenti, cambiamenti di stato di una pratica inoltrata).</p>
 <p>Il cittadino interagisce con un unico servizio di gestione delle preferenze (SGP); questo verrà interrogato dal sistema per l'invio delle comunicazioni al fine di reperire i canali di inoltro preferito e gli indirizzi di contatto del destinatario. Il cittadino non ha quindi accesso diretto al sistema: i sistemi informativi delle parti coinvolte nel servizio potranno inviare comunicazioni ai cittadini attraverso l'API fornita.</p>
 <p>Le amministrazioni avranno piena visibilità delle comunicazioni (e del loro stato), limitatamente a quelle di cui sono esse stesse i mittenti.</p>
-<h3 id="api-correlate">API correlate</h3>
-<ul>
-<li><a href="../api/notifications.html">API notifiche</a></li>
-</ul>
 <h2 id="preferenze">Preferenze</h2>
 <p>Il sistema di gestione delle preferenze (SGP) consente al cittadino di gestire centralmente le impostazioni di personalizzazione relative ai servizi digitali forniti dalla Pubblica Amministrazione. Per esempio:</p>
 <ul>
@@ -172,17 +163,13 @@ Componenti della Cittadinanza digitale
 <li>Metodi di pagamento preferiti (pagoPA)</li>
 </ul>
 <p>Attraverso queste informazioni, SGP fornisce alle amministrazioni che lo consultano l'opportunità di personalizzare i propri servizi digitali. I cittadini non hanno accesso diretto al sistema: i sistemi di amministrazione dell'amministrazione utilizzano l'API per accedere (leggere) gli attributi gestiti dal SGP per conto dei cittadini che si autenticano sui loro servizi digitali.</p>
-<h3 id="api-correlate_1">API correlate</h3>
-<ul>
-<li><a href="../api/preferences.html">Preferenze API</a></li>
-</ul>
 <h2 id="vantaggi">Vantaggi</h2>
 <h3 id="per-i-cittadini">Per i cittadini</h3>
 <ul>
 <li>gestire i contatti di consegna da un punto di accesso centrale (sito APP mobile e italia.it)</li>
 <li>gestire le sottoscrizioni (opt-in e opt-out) da un punto di accesso centrale</li>
 <li>accedere alla cronologia delle comunicazioni da un punto di accesso centrale</li>
-<li>effettuare semplici operazioni transazionali mediante notifiche ricevute (cioè pagamenti)</li>
+<li>effettuare semplici operazioni transazionali mediante notifiche ricevute (es. pagamenti)</li>
 </ul>
 <h3 id="per-le-amministrazioni">Per le amministrazioni</h3>
 <ul>
@@ -190,7 +177,7 @@ Componenti della Cittadinanza digitale
 <li>delegare la gestione e l'aggiornamento dei contatti di consegna elettronica dei cittadini</li>
 <li>dare maggiore visibilità alle proprie notifiche, laddove confluiscono in un contesto più ampio / nazionale</li>
 <li>richiamare le scadenze e facilitare i pagamenti in modo semplice e sicuro</li>
-<li>trasmetta gratuitamente comunicazioni multicanale (email, push notification)</li>
+<li>trasmettere gratuitamente comunicazioni multicanale (email, push notification)</li>
 <li>assegnare uno stato alle comunicazioni (per esempio per monitorare lo stato di una pratica)</li>
 <li>ottenere lo stato di consegna (inviato, ricevuto) della comunicazione e possibilmente la lettura del messaggio laddove il canale lo consente</li>
 </ul>
@@ -214,8 +201,7 @@ Componenti della Cittadinanza digitale
 </ul>
 <h2 id="api-docs">API docs</h2>
 <ul>
-<li><a href="../api/notifications.html">API notifiche</a></li>
-<li><a href="../api/preferences.html">Preferenze API</a></li>
+<li><a href="../api/public.html">Digital Citizenship API</a></li>
 </ul>
               
             </div>
@@ -224,7 +210,7 @@ Componenti della Cittadinanza digitale
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../server/" class="btn btn-neutral float-right" title="API playground">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../onboarding.it/" class="btn btn-neutral float-right" title="Test the API (it)">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -252,13 +238,13 @@ Componenti della Cittadinanza digitale
   <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
-          <a href="https://github.com/teamdigitale/cittadinanza-digitale" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+          <a href="https://github.com/teamdigitale/digital-citizenship" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
         <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../server/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../onboarding.it/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
