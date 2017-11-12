@@ -137,7 +137,7 @@
         },
         {
             "location": "/resources/",
-            "text": "Resources\n\n\nBackend - Digital Citizenship API\n\n\n\n\n\n\nDocumentation for developers:\n  https://teamdigitale.github.io/digital-citizenship\n\n\n\n\n\n\nRepository with application logic / API implementation and technical documentation:\n  https://github.com/teamdigitale/digital-citizenship-functions\n\n\n\n\n\n\nRepository with documentation and scripts to create infrastructure resources:\n  https://github.com/teamdigitale/digital-citizenship\n\n\n\n\n\n\nRepository with developer portal automation tasks:\n  https://github.com/teamdigitale/digital-citizenship-onboarding\n\n\n\n\n\n\nFrontend - Italia (Web) App\n\n\n\n\n\n\nRepository with native mobile application sources:\n  https://github.com/teamdigitale/italia-app\n\n\n\n\n\n\nRepository with progressive web application sources:\n  https://github.com/teamdigitale/italia-web\n\n\n\n\n\n\nRepository with web / mobile application backend sources:\n  https://github.com/teamdigitale/italia-backend",
+            "text": "Resources\n\n\nBackend - Digital Citizenship API\n\n\n\n\nDocumentation for administrations / API users\n\n\nRepository with documentation and scripts to create infrastructure resources\n\n\nRepository with API implementation and technical documentation\n\n\nRepository with developer portal automation tasks\n\n\n\n\nFrontend - Italia (Web) App\n\n\n\n\n[Repository with native mobile application sources](https://github.com/teamdigitale/italia-app](https://github.com/teamdigitale/italia-app)\n\n\nRepository with progressive web application sources\n\n\nRepository with web / mobile application backend sources",
             "title": "Resources"
         },
         {
@@ -147,12 +147,12 @@
         },
         {
             "location": "/resources/#backend-digital-citizenship-api",
-            "text": "Documentation for developers:\n  https://teamdigitale.github.io/digital-citizenship    Repository with application logic / API implementation and technical documentation:\n  https://github.com/teamdigitale/digital-citizenship-functions    Repository with documentation and scripts to create infrastructure resources:\n  https://github.com/teamdigitale/digital-citizenship    Repository with developer portal automation tasks:\n  https://github.com/teamdigitale/digital-citizenship-onboarding",
+            "text": "Documentation for administrations / API users  Repository with documentation and scripts to create infrastructure resources  Repository with API implementation and technical documentation  Repository with developer portal automation tasks",
             "title": "Backend - Digital Citizenship API"
         },
         {
             "location": "/resources/#frontend-italia-web-app",
-            "text": "Repository with native mobile application sources:\n  https://github.com/teamdigitale/italia-app    Repository with progressive web application sources:\n  https://github.com/teamdigitale/italia-web    Repository with web / mobile application backend sources:\n  https://github.com/teamdigitale/italia-backend",
+            "text": "[Repository with native mobile application sources](https://github.com/teamdigitale/italia-app](https://github.com/teamdigitale/italia-app)  Repository with progressive web application sources  Repository with web / mobile application backend sources",
             "title": "Frontend - Italia (Web) App"
         }
     ]
