@@ -130,15 +130,21 @@ in modo da provare l'invio dei primi messaggi tramite il sistema di notifiche.</
 <li>dipartimento (area) dell'amministrazione a cui afferisce il servizio di notifica</li>
 </ul>
 <p>Una volta avuto accesso al portale sviluppatori segui il link
-"Subscribe to the Digital Citizenship API" e attendi
+<strong>"Subscribe to the Digital Citizenship API"</strong> e attendi
 che la sottoscrizione venga attivata.</p>
-<p>Al momento dell'attivazione riceverai un'email.
-Da quel momento è possibile iniziare a utilizzare l'API in modalità di test.
-L'email contiene un codice fiscale "fittizio" tramite il quale potrai utilizzare
-l'<strong>API per l'invio di messaggi</strong> che ti verrano recapitati all'indirizzo
-email che hai fornito durante la registrazione.</p>
-<p>Fin quando sarà attiva la modalità di test, non potrai inviare messaggi
-a indirizzi diversi da quello verificato in fase di registrazione.</p>
+<p>Al momento dell'attivazione riceverai un'email:
+da quel momento è possibile iniziare a utilizzare l'API in modalità di test.</p>
+<p>L'email contiene un codice fiscale "fittizio" tramite il quale puoi utilizzare
+l'<strong>API per l'invio di messaggi</strong>; ti verrano recapitati all'indirizzo
+che hai fornito durante la registrazione.</p>
+<h3 id="differenze-tra-la-sottoscrizione-di-test-e-produzione">Differenze tra la sottoscrizione di test e produzione</h3>
+<p>Fin quando sarà attiva la modalità di test:</p>
+<ul>
+<li>non potrai inviare messaggi a indirizzi email diversi da quello che hai fornito in fase di registrazione</li>
+<li>non potrai inviare messaggi usando un codice fiscale diverso da quello che hai ricevuto durante la registrazione</li>
+<li>non potrai leggere / scrivere le preferenze associate a un codice fiscale (Profile API)</li>
+<li>il numero di richieste API che è possible inoltrare è limitato a 1000 per settimana</li>
+</ul>
 <h2 id="provare-le-api-tramite-il-portale-sviluppatori">Provare le API tramite il portale sviluppatori</h2>
 <p>Tramite il developer portal è possibile:</p>
 <ul>
@@ -146,10 +152,11 @@ a indirizzi diversi da quello verificato in fase di registrazione.</p>
 <li>visualizzare l'API-key, necessaria per utilizzare le API</li>
 <li>provare a inviare messaggi tramite l'<a href="https://agid-apim-prod.portal.azure-api.net/docs/services/digital-citizenship-api">interfaccia grafica</a></li>
 </ul>
-<p>L'account di test è limitato all'utilizzo dell'API di invio dei messaggi ("submitMessage");
-sarà necessario fornire in input il codice fiscale ottenuto durante la registrazione.</p>
+<p>L'account di test è limitato all'utilizzo dell'API di invio dei messaggi ("submitMessage").
+Per inviare un messaggio tramite API è necessario fornire in input il 
+codice fiscale ottenuto durante la registrazione.</p>
 <p>Nella <a href="https://agid-apim-prod.portal.azure-api.net/developer">pagina con i dati relativi al tuo account</a>
-troverai l'Api-Key ("Primary key") che è necessario utilizzare per autenticarsi alle API.</p>
+puoi trovare l'Api-Key ("Primary key") che è necessario utilizzare per autenticarsi alle API.</p>
 <p><img alt="sign-up" src="../assets/3-apikey.PNG" /></p>
 <h2 id="generare-un-client-dalle-specifiche-openapi">Generare un client dalle specifiche OpenAPI</h2>
 <p>Esistono diversi tool open source per generare i client delle API nei diversi linguaggi
