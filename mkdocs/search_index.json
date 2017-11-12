@@ -108,7 +108,7 @@
         {
             "location": "/onboarding.it/",
             "text": "Quick start\n\n\nRegistrarsi all'ambiente di test delle API\n\n\nPuoi richiedere accesso da subito all'ambiente di test per le API,\nin modo da provare l'invio dei primi messaggi tramite il sistema di notifiche.\n\n\nRegistrati sul portale sviluppatori\n -> \"Sign up now\"\n\n\nTi verranno chieste le seguenti informazioni:\n\n\n\n\nun indirizzo email valido\n\n\nnome utente\n\n\npassword\n\n\nnome\n\n\ncognome\n\n\nnome dell'amministrazione (\"Organization\") di appartenenza (verr\u00e0 inserito nel contenuto dei messaggi inviati)\n\n\nnome del servizio in cui vuoi integrare le notifiche (es. \"avvisi di scadenza\")\n\n\ndipartimento (area) dell'amministrazione a cui afferisce il servizio di notifica\n\n\n\n\nUna volta avuto accesso al portale sviluppatori segui il link\n\n\"Subscribe to the Digital Citizenship API\"\n e attendi\nche la sottoscrizione venga attivata.\n\n\nAl momento dell'attivazione riceverai un'email:\nda quel momento \u00e8 possibile iniziare a utilizzare l'API in modalit\u00e0 di test.\n\n\nL'email contiene un codice fiscale \"fittizio\" tramite il quale puoi utilizzare\nl'\nAPI per l'invio di messaggi\n; ti verrano recapitati all'indirizzo\nche hai fornito durante la registrazione.\n\n\nDifferenze tra la sottoscrizione di test e produzione\n\n\nFin quando sar\u00e0 attiva la modalit\u00e0 di test:\n\n\n\n\nnon potrai inviare messaggi a indirizzi email diversi da quello che hai fornito in fase di registrazione\n\n\nnon potrai inviare messaggi usando un codice fiscale diverso da quello che hai ricevuto durante la registrazione\n\n\nnon potrai leggere / scrivere le preferenze associate a un codice fiscale (Profile API)\n\n\nil numero di richieste API che \u00e8 possible inoltrare \u00e8 limitato a 1000 per settimana\n\n\n\n\nProvare le API tramite il portale sviluppatori\n\n\nTramite il developer portal \u00e8 possibile:\n\n\n\n\nconsultare le spefiche delle API (OpenAPI / Swagger)\n\n\nvisualizzare l'API-key, necessaria per utilizzare le API\n\n\nprovare a inviare messaggi tramite l'\ninterfaccia grafica\n\n\n\n\nL'account di test \u00e8 limitato all'utilizzo dell'API di invio dei messaggi (\"submitMessage\").\nPer inviare un messaggio tramite API \u00e8 necessario fornire in input il \ncodice fiscale ottenuto durante la registrazione.\n\n\nNella \npagina con i dati relativi al tuo account\n\npuoi trovare l'Api-Key (\"Primary key\") che \u00e8 necessario utilizzare per autenticarsi alle API.\n\n\n\n\nGenerare un client dalle specifiche OpenAPI\n\n\nEsistono diversi tool open source per generare i client delle API nei diversi linguaggi\ndi programmazione. Ad esempio tramite \nAutorest\n, sviluppato da Microsoft,\n\u00e8 possibile generare client in C#, Go, Java, Node.js, TypeScript, Python, Ruby and PHP.\n\n\nSpecifiche OpenAPI per l'iniziativa di Cittadinanza Digitale",
-            "title": "Test the API (it)"
+            "title": "Quick start (it)"
         },
         {
             "location": "/onboarding.it/#quick-start",
@@ -134,6 +134,26 @@
             "location": "/onboarding.it/#generare-un-client-dalle-specifiche-openapi",
             "text": "Esistono diversi tool open source per generare i client delle API nei diversi linguaggi\ndi programmazione. Ad esempio tramite  Autorest , sviluppato da Microsoft,\n\u00e8 possibile generare client in C#, Go, Java, Node.js, TypeScript, Python, Ruby and PHP.  Specifiche OpenAPI per l'iniziativa di Cittadinanza Digitale",
             "title": "Generare un client dalle specifiche OpenAPI"
+        },
+        {
+            "location": "/resources/",
+            "text": "Resources\n\n\nBackend - Digital Citizenship API\n\n\n\n\n\n\nDocumentation for developers:\n  https://teamdigitale.github.io/digital-citizenship\n\n\n\n\n\n\nRepository with application logic / API implementation and technical documentation:\n  https://github.com/teamdigitale/digital-citizenship-functions\n\n\n\n\n\n\nRepository with documentation and scripts to create infrastructure resources:\n  https://github.com/teamdigitale/digital-citizenship\n\n\n\n\n\n\nRepository with developer portal automation tasks:\n  https://github.com/teamdigitale/digital-citizenship-onboarding\n\n\n\n\n\n\nFrontend - Italia (Web) App\n\n\n\n\n\n\nRepository with native mobile application sources:\n  https://github.com/teamdigitale/italia-app\n\n\n\n\n\n\nRepository with progressive web application sources:\n  https://github.com/teamdigitale/italia-web\n\n\n\n\n\n\nRepository with web / mobile application backend sources:\n  https://github.com/teamdigitale/italia-backend",
+            "title": "Resources"
+        },
+        {
+            "location": "/resources/#resources",
+            "text": "",
+            "title": "Resources"
+        },
+        {
+            "location": "/resources/#backend-digital-citizenship-api",
+            "text": "Documentation for developers:\n  https://teamdigitale.github.io/digital-citizenship    Repository with application logic / API implementation and technical documentation:\n  https://github.com/teamdigitale/digital-citizenship-functions    Repository with documentation and scripts to create infrastructure resources:\n  https://github.com/teamdigitale/digital-citizenship    Repository with developer portal automation tasks:\n  https://github.com/teamdigitale/digital-citizenship-onboarding",
+            "title": "Backend - Digital Citizenship API"
+        },
+        {
+            "location": "/resources/#frontend-italia-web-app",
+            "text": "Repository with native mobile application sources:\n  https://github.com/teamdigitale/italia-app    Repository with progressive web application sources:\n  https://github.com/teamdigitale/italia-web    Repository with web / mobile application backend sources:\n  https://github.com/teamdigitale/italia-backend",
+            "title": "Frontend - Italia (Web) App"
         }
     ]
 }
