@@ -9,13 +9,14 @@
 <head>
     <meta charset="utf-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Cittadinanza digitale &mdash; Cittadinanza digitale  documentazione</title>
+    <title>Benefici del sistema di avvisi e preferenze &mdash; Cittadinanza digitale  documentazione</title>
                
     <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />   
     <link rel="index" title="Indice" href="genindex.html" />
     <link rel="search" title="Cerca" href="search.html" />
-    <link rel="top" title="Cittadinanza digitale  documentazione" href="#" />
-    <link rel="next" title="Cittadinanza digitale" href="introduzione.html" />  
+    <link rel="top" title="Cittadinanza digitale  documentazione" href="index.html" />
+    <link rel="next" title="Modello di funzionamento" href="architettura.html" />
+    <link rel="prev" title="Cittadinanza digitale" href="introduzione.html" />  
     <script src="_static/js/modernizr.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600" rel="stylesheet">
 
@@ -54,7 +55,7 @@
 
             
             
-            <h1 class="project-title"><a href="#" class="icon icon-home"> Cittadinanza digitale </a></h1>
+            <h1 class="project-title"><a href="index.html" class="icon icon-home"> Cittadinanza digitale </a></h1>
             
 
 
@@ -70,9 +71,14 @@
                 </div>
 
                 <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                          <ul>
+                          <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="introduzione.html">Cittadinanza digitale</a></li>
-<li class="toctree-l1"><a class="reference internal" href="benefici.html">Benefici del sistema di avvisi e preferenze</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Benefici del sistema di avvisi e preferenze</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#cosa-non-va-con-l-email">Cosa non va con l’email ?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#nuove-possibilita-per-i-cittadini">Nuove possibilità per i Cittadini</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#nuove-possibilita-per-le-amministrazioni">Nuove possibilità per le Amministrazioni</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="architettura.html">Modello di funzionamento</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api.html">Utilizzo delle API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="risorse.html">Risorse</a></li>
@@ -88,7 +94,7 @@
             <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
                 
                 <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-                <a href="#">Cittadinanza digitale</a> 
+                <a href="index.html">Cittadinanza digitale</a> 
             </nav>
 
 
@@ -115,15 +121,15 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="#">Docs</a> &raquo;</li>
+      <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Cittadinanza digitale</li>
+      <li>Benefici del sistema di avvisi e preferenze</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/benefici.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -136,47 +142,67 @@
                     <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
                         <div itemprop="articleBody">
                             
-  <div class="section" id="cittadinanza-digitale">
-<h1>Cittadinanza digitale<a class="headerlink" href="#cittadinanza-digitale" title="Link a questa intestazione">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="introduzione.html">Cittadinanza digitale</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="introduzione.html#introduzione">Introduzione</a></li>
-<li class="toctree-l2"><a class="reference internal" href="introduzione.html#comunicazioni">Comunicazioni</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="introduzione.html#casi-d-uso">Casi d’uso</a></li>
+  <div class="section" id="benefici-del-sistema-di-avvisi-e-preferenze">
+<h1>Benefici del sistema di avvisi e preferenze<a class="headerlink" href="#benefici-del-sistema-di-avvisi-e-preferenze" title="Link a questa intestazione">¶</a></h1>
+<p>Il sistema di avvisi e preferenze fornisce uno strumento
+per tenere informati i cittadini, tramite i loro <strong>canali di comunicazione preferiti</strong>,
+utilizzando indirizzi di recapito sempre aggiornati, in maniera trasparente
+per le amministrazioni che utilizzano il servizio.</p>
+<p>Tra gli obiettivi strategici si pone quindi l’incentivo all’utilizzo
+dei canali digitali, più economici ed efficienti rispetto al cartaceo.</p>
+<div class="section" id="cosa-non-va-con-l-email">
+<h2>Cosa non va con l’email ?<a class="headerlink" href="#cosa-non-va-con-l-email" title="Link a questa intestazione">¶</a></h2>
+<p>L’email è senza dubbio il canale di comunicazione digitale più popolare e utilizzato.
+Tuttavia, alcuni limiti del protocollo <a class="reference external" href="https://it.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol">SMTP</a>
+rendono complessa l’implementazione di alcune funzionalità, o, laddove si realizzano tramite
+<a class="reference external" href="https://it.wikipedia.org/wiki/S/MIME">estensioni del protocollo</a>,
+rimane difficile continuare a garantire un’esperienza utente (<a class="reference external" href="https://it.wikipedia.org/wiki/User_Experience">UX</a>) efficace.</p>
+<p>Ad esempio l’email:</p>
+<ul class="simple">
+<li>non certifica l’identità del mittente</li>
+<li>non integra l’autenticazione tramite <a class="reference external" href="https://www.spid.gov.it">SPID</a> per la lettura dei messaggi</li>
+<li>non certifica la consegna sul dispositivo del destinatario (nè tantomeno la lettura dei messaggi)</li>
+<li>è necessario integrare complessi meccanismi antispam / antivirus (lato gestore e lato utente)</li>
+<li>è poco adatta all’invio di informazioni strutturate che possano essere interpretate programmaticamente
+dai software di ricezione (es. <em>app mobile</em>)</li>
+<li>è poco adatta a condividere allegati di grandi dimensioni
+(è più «economico» inviare dei link agli allegati memorizzati altrove)</li>
+<li>generalmente, i server SMTP non forniscono un meccanismo per recuperare l’elenco e i metadati
+relativi a messaggi già inoltrati (destinatario, mittente, stato e ora dell’inoltro, …)</li>
 </ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="introduzione.html#preferenze">Preferenze</a></li>
-<li class="toctree-l2"><a class="reference internal" href="introduzione.html#a-chi-si-rivolge">A chi si rivolge</a></li>
+<p>Inoltre le amministrazioni non hanno accesso (tramite API)
+a un elenco degli indirizzi email associati ai cittadini.</p>
+<p>Il sistema di avvisi non si pone l’obiettivo di sostituire l’email
+(altresì utilizzata dal sistema, al pari degli altri mezzi di comunicazione),
+ma di integrare i diversi canali con funzionalità sufficienti a risolvere i suddetti problemi,
+continuando nel contempo a garantire un’<strong>esperienza utente soddisfacente</strong>.</p>
+</div>
+<div class="section" id="nuove-possibilita-per-i-cittadini">
+<h2>Nuove possibilità per i Cittadini<a class="headerlink" href="#nuove-possibilita-per-i-cittadini" title="Link a questa intestazione">¶</a></h2>
+<ul class="simple">
+<li>gestire i contatti di recapito da un punto di accesso centrale (sito web &amp; APP mobile italia.it)</li>
+<li>gestire le sottoscrizioni (opt-in e opt-out) da un punto di accesso centrale</li>
+<li>accedere, tramite SPID, alla cronologia delle comunicazioni da un punto di accesso centrale</li>
+<li>effettuare semplici operazioni transazionali mediante gli avvisi
+ricevuti (es. pagamenti tramite PagoPA)</li>
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="benefici.html">Benefici del sistema di avvisi e preferenze</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="benefici.html#cosa-non-va-con-l-email">Cosa non va con l’email ?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="benefici.html#nuove-possibilita-per-i-cittadini">Nuove possibilità per i Cittadini</a></li>
-<li class="toctree-l2"><a class="reference internal" href="benefici.html#nuove-possibilita-per-le-amministrazioni">Nuove possibilità per le Amministrazioni</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="architettura.html">Modello di funzionamento</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="architettura.html#invio-di-una-notifica-per-un-messaggio">Invio di una notifica per un messaggio</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="architettura.html#autenticazione-e-autorizzazioni">Autenticazione e autorizzazioni</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="api.html">Utilizzo delle API</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="api.html#registrarsi-allambiente-di-test-delle-api">Registrarsi all’ambiente di test delle API</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="api.html#differenze-tra-la-sottoscrizione-di-test-e-produzione">Differenze tra la sottoscrizione di test e produzione</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="api.html#provare-le-api-tramite-il-portale-sviluppatori">Provare le API tramite il portale sviluppatori</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api.html#generare-un-client-dalle-specifiche-openapi">Generare un client dalle specifiche OpenAPI</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="risorse.html">Risorse</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="risorse.html#backend-api-cittadinanza-digitale">Backend - API Cittadinanza Digitale</a></li>
-<li class="toctree-l2"><a class="reference internal" href="risorse.html#frontend-italia-web-app">Frontend - Italia (Web) App</a></li>
-</ul>
-</li>
+</div>
+<div class="section" id="nuove-possibilita-per-le-amministrazioni">
+<h2>Nuove possibilità per le Amministrazioni<a class="headerlink" href="#nuove-possibilita-per-le-amministrazioni" title="Link a questa intestazione">¶</a></h2>
+<ul class="simple">
+<li>inviare comunicazioni elettroniche anche senza conoscere gli
+indirizzi di contatto dei cittadini, utilizzando solo il codice
+fiscale</li>
+<li>delegare la gestione e l’aggiornamento dei contatti di consegna
+elettronica dei cittadini</li>
+<li>dare maggiore visibilità alle proprie notifiche, laddove confluiscono
+in un contesto più ampio / nazionale</li>
+<li>richiamare le scadenze e facilitare i pagamenti in modo semplice e
+sicuro</li>
+<li>trasmettere gratuitamente comunicazioni multicanale (email, push
+notification)</li>
+<li>recuperare lo stato di inoltro della comunicazione
+e di lettura del messaggio (laddove il canale lo consente)</li>
 </ul>
 </div>
 </div>
@@ -191,8 +217,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="introduzione.html" class="btn float-right" title="Cittadinanza digitale" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="architettura.html" class="btn float-right" title="Modello di funzionamento" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
+      
+        <a href="introduzione.html" class="btn" title="Cittadinanza digitale" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
