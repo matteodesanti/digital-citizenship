@@ -4,7 +4,7 @@ Risorse
 Backend - API Cittadinanza Digitale
 -----------------------------------
 
--  :download:`Specifiche OpenAPI <./api/public.html>`
+-  `Specifiche OpenAPI <api/public.html>`_
 -  `Documentazione per le Amministrazioni e gli utenti delle
    API <https://teamdigitale.github.io/digital-citizenship>`__
 -  `Documentazione e script riguardanti
