@@ -7,4 +7,5 @@ Cittadinanza digitale
   benefici.rst
   architettura.rst
   api.rst
+  roadmap.rst
   risorse.rst

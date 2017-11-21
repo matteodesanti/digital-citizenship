@@ -75,7 +75,7 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Cittadinanza digitale</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#introduzione">Introduzione</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#comunicazioni">Comunicazioni</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#casi-d-uso">Casi d’uso</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#esempi-di-casi-d-uso">Esempi di casi d’uso</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#preferenze">Preferenze</a></li>
@@ -85,6 +85,7 @@
 <li class="toctree-l1"><a class="reference internal" href="benefici.html">Benefici del sistema di avvisi e preferenze</a></li>
 <li class="toctree-l1"><a class="reference internal" href="architettura.html">Modello di funzionamento</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api.html">Utilizzo delle API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="roadmap.html">Roadmap di evoluzione</a></li>
 <li class="toctree-l1"><a class="reference internal" href="risorse.html">Risorse</a></li>
 </ul>
   
@@ -154,7 +155,7 @@
 i cittadini e la Pubblica Amministrazione (PA) attraverso la creazione
 di una piattaforma di componenti riutilizzabili in grado di rendere i
 servizi digitali più efficaci e migliorare la comunicazione
-cittadino-PA.</p>
+tra i cittadini e la PA.</p>
 <p>I componenti vengono riutilizzati dalle amministrazioni che erogano
 servizi digitali al fine di garantire un’esperienza utente coerente
 nonché risparmiare sull’effort richiesto da un’implementazione
@@ -193,62 +194,52 @@ documentazione</td>
 </tbody>
 </table>
 <p>L’integrazione dei vari componenti nei servizi digitali forniti dalla
-Pubblica Amministrazione consentirà al cittadino di vivere l’esperienza
-di cittadinanza digitale, portando la sua identità e le informazioni
+PA consentirà al cittadino di vivere l’esperienza
+di Cittadinanza Digitale, portando con sè identità e informazioni,
 trasversalmente ai diversi servizi.</p>
 <p>Oltre ai componenti esistenti (pagoPA, SPID), AgID intende fornire
-ulteriori servizi alle Pubbliche Amministrazioni realizzando i
-componenti della Cittadinanza Digitale in relazione alle ‘Preferenze’
-dei cittadini e alle ‘Comunicazioni’ con la PA.</p>
+ulteriori servizi alle PA realizzando inizialmente le
+componenti per la gestione delle preferenze
+dei cittadini e per le comunicazioni tra i cittadini e la PA e
+successivamente la componente per l’archiviazione e la gestione
+dei documenti.</p>
 </div>
 <div class="section" id="comunicazioni">
 <h2>Comunicazioni<a class="headerlink" href="#comunicazioni" title="Link a questa intestazione">¶</a></h2>
 <p>Le amministrazioni saranno in grado di inviare notifiche multicanale
-(e-mail, notifiche PUSH, ecc.) ai cittadini che hanno sottoscritto un
-particolare argomento di interesse (opt-in) sui portali PA e/o hanno
-indicato uno o più recapiti per ricevere avvisi dalla Pubblica
-Amministrazione (ad es. scadenze, pagamenti, cambiamenti di stato di una
+(email, SMS, instant messagging, ecc.) ai cittadini che hanno
+indicato uno o più recapiti per ricevere avvisi dalla PA
+(ad es. scadenze, pagamenti, cambiamenti di stato di una
 pratica inoltrata).</p>
 <p>Il cittadino interagisce con un unico servizio di gestione delle
-preferenze (SGP); questo verrà interrogato dal sistema per l’invio delle
+preferenze; questo verrà interrogato dal sistema per l’invio delle
 comunicazioni al fine di reperire i canali di inoltro preferito e gli
-indirizzi di contatto del destinatario. Il cittadino non ha quindi
-accesso diretto al sistema: i sistemi informativi delle parti coinvolte
-nel servizio potranno inviare comunicazioni ai cittadini attraverso
-l’API fornita.</p>
-<p>Le amministrazioni avranno piena visibilità delle comunicazioni (e del
-loro stato), limitatamente a quelle di cui sono esse stesse i mittenti.</p>
-<div class="section" id="casi-d-uso">
-<h3>Casi d’uso<a class="headerlink" href="#casi-d-uso" title="Link a questa intestazione">¶</a></h3>
+indirizzi di contatto del destinatario.</p>
+<p>Le amministrazioni avranno piena visibilità delle comunicazioni che
+hanno inviato ad un cittadino (e del loro stato di invio e lettura).</p>
+<div class="section" id="esempi-di-casi-d-uso">
+<h3>Esempi di casi d’uso<a class="headerlink" href="#esempi-di-casi-d-uso" title="Link a questa intestazione">¶</a></h3>
 <ul class="simple">
-<li>invio di promemoria (es. screening)</li>
-<li>invio di scadenze (es. di un documento)</li>
-<li>comunicazioni relative a nuove gare o contratti</li>
+<li>invio di promemoria (es. appuntamento medico)</li>
+<li>invio di scadenze (es. scadenza della carta d’identità)</li>
 <li>comunicazioni scuola-famiglia</li>
-<li>comunicazioni che contengono informazioni per pagamenti da effettuare
-tramite App od online (es. tributi ricorrenti, multe)</li>
-<li>comunicazioni relative allo stato di un flusso di lavoro avviato per
-conto del cittadino (es. “pratica presa in carico”, “prenotazione
-accettata”) migliorando l’efficienza dei punti di contatto</li>
+<li>comunicazioni che contengono informazioni per pagamenti (es. tributi, multe)</li>
+<li>comunicazioni relative allo stato di una pratica (es. “pratica presa in carico”,
+“prenotazione accettata”).</li>
 </ul>
 </div>
 </div>
 <div class="section" id="preferenze">
 <h2>Preferenze<a class="headerlink" href="#preferenze" title="Link a questa intestazione">¶</a></h2>
-<p>Il sistema di gestione delle preferenze (SGP) consente al cittadino di
+<p>Il sistema di gestione delle preferenze consente al cittadino di
 gestire centralmente le impostazioni di personalizzazione relative ai
-servizi digitali forniti dalla Pubblica Amministrazione. Per esempio:</p>
+servizi digitali forniti dalla PA. Per esempio:</p>
 <ul class="simple">
-<li>Uno o più indirizzi per ricevere comunicazioni</li>
-<li>Canali di comunicazione e tipologie di sottoscrizione</li>
-<li>Metodi di pagamento preferiti (pagoPA)</li>
+<li>Impostare uno o più indirizzi per ricevere comunicazioni digitali</li>
+<li>Metodi di pagamento preferiti da utilizzare con pagoPA</li>
 </ul>
-<p>Attraverso queste informazioni, SGP fornisce alle amministrazioni che lo
-consultano l’opportunità di personalizzare i propri servizi digitali. I
-cittadini non hanno accesso diretto al sistema: i sistemi di
-amministrazione dell’amministrazione utilizzano l’API per accedere
-(leggere) gli attributi gestiti dal SGP per conto dei cittadini che si
-autenticano sui loro servizi digitali.</p>
+<p>Attraverso queste informazioni, le PA potranno personalizzare i propri servizi
+digitali.</p>
 </div>
 <div class="section" id="a-chi-si-rivolge">
 <h2>A chi si rivolge<a class="headerlink" href="#a-chi-si-rivolge" title="Link a questa intestazione">¶</a></h2>
@@ -284,7 +275,7 @@ al fine di veicolare i messaggi sui canali preferiti dai cittadini.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright CC-BY 4.0 - Agenzia per l&#39;Italia Digitale.
-      Ultimo aggiornamento 17/11/2017.
+      Ultimo aggiornamento 21/11/2017.
 
     </p>
   </div>

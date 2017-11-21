@@ -81,6 +81,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="architettura.html">Modello di funzionamento</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api.html">Utilizzo delle API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="roadmap.html">Roadmap di evoluzione</a></li>
 <li class="toctree-l1"><a class="reference internal" href="risorse.html">Risorse</a></li>
 </ul>
   
@@ -152,26 +153,15 @@ per le amministrazioni che utilizzano il servizio.</p>
 dei canali digitali, più economici ed efficienti rispetto al cartaceo.</p>
 <div class="section" id="cosa-non-va-con-l-email">
 <h2>Cosa non va con l’email ?<a class="headerlink" href="#cosa-non-va-con-l-email" title="Link a questa intestazione">¶</a></h2>
-<p>L’email è senza dubbio il canale di comunicazione digitale più popolare e utilizzato.
-Tuttavia, alcuni limiti del protocollo <a class="reference external" href="https://it.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol">SMTP</a>
-rendono complessa l’implementazione di alcune funzionalità, o, laddove si realizzano tramite
-<a class="reference external" href="https://it.wikipedia.org/wiki/S/MIME">estensioni del protocollo</a>,
-rimane difficile continuare a garantire un’esperienza utente (<a class="reference external" href="https://it.wikipedia.org/wiki/User_Experience">UX</a>) efficace.</p>
-<p>Ad esempio l’email:</p>
+<p>L’email è senza dubbio il canale di comunicazione più popolare e utilizzato.
+L’email che siamo tutti abituati ad usare quotidianamente ha però alcuni limiti,
+per esempio:</p>
 <ul class="simple">
-<li>non certifica l’identità del mittente</li>
-<li>non integra l’autenticazione tramite <a class="reference external" href="https://www.spid.gov.it">SPID</a> per la lettura dei messaggi</li>
-<li>non certifica la consegna sul dispositivo del destinatario (nè tantomeno la lettura dei messaggi)</li>
-<li>è necessario integrare complessi meccanismi antispam / antivirus (lato gestore e lato utente)</li>
-<li>è poco adatta all’invio di informazioni strutturate che possano essere interpretate programmaticamente
-dai software di ricezione (es. <em>app mobile</em>)</li>
-<li>è poco adatta a condividere allegati di grandi dimensioni
-(è più «economico» inviare dei link agli allegati memorizzati altrove)</li>
-<li>generalmente, i server SMTP non forniscono un meccanismo per recuperare l’elenco e i metadati
-relativi a messaggi già inoltrati (destinatario, mittente, stato e ora dell’inoltro, …)</li>
+<li>non certifica l’identità del mittente e del destinatario</li>
+<li>non certifica la consegna sul dispositivo del destinatario (nè tantomeno l’avvenuta lettura dei messaggi)</li>
+<li>è poco adatta all’invio di comunicazioni ricche (es. scadenze, richieste di pagamento, denaro)</li>
 </ul>
-<p>Inoltre le amministrazioni non hanno accesso (tramite API)
-a un elenco degli indirizzi email associati ai cittadini.</p>
+<p>Inoltre le PA non hanno accesso a un elenco degli indirizzi email associati ai cittadini.</p>
 <p>Il sistema di avvisi non si pone l’obiettivo di sostituire l’email
 (altresì utilizzata dal sistema, al pari degli altri mezzi di comunicazione),
 ma di integrare i diversi canali con funzionalità sufficienti a risolvere i suddetti problemi,
@@ -180,27 +170,20 @@ continuando nel contempo a garantire un’<strong>esperienza utente soddisfacent
 <div class="section" id="nuove-possibilita-per-i-cittadini">
 <h2>Nuove possibilità per i Cittadini<a class="headerlink" href="#nuove-possibilita-per-i-cittadini" title="Link a questa intestazione">¶</a></h2>
 <ul class="simple">
-<li>gestire i contatti di recapito da un punto di accesso centrale (sito web &amp; APP mobile italia.it)</li>
-<li>gestire le sottoscrizioni (opt-in e opt-out) da un punto di accesso centrale</li>
-<li>accedere, tramite SPID, alla cronologia delle comunicazioni da un punto di accesso centrale</li>
-<li>effettuare semplici operazioni transazionali mediante gli avvisi
-ricevuti (es. pagamenti tramite PagoPA)</li>
+<li>accedere all’archivio delle comunicazioni con la PA</li>
+<li>gestire i contatti di recapito da un punto di accesso centrale</li>
+<li>gestire avvisi in modalità «integrata» (es. effettuare pagamenti o segnare delle
+scadenze nel proprio calendario)</li>
 </ul>
 </div>
 <div class="section" id="nuove-possibilita-per-le-amministrazioni">
 <h2>Nuove possibilità per le Amministrazioni<a class="headerlink" href="#nuove-possibilita-per-le-amministrazioni" title="Link a questa intestazione">¶</a></h2>
 <ul class="simple">
-<li>inviare comunicazioni elettroniche anche senza conoscere gli
-indirizzi di contatto dei cittadini, utilizzando solo il codice
-fiscale</li>
-<li>delegare la gestione e l’aggiornamento dei contatti di consegna
-elettronica dei cittadini</li>
-<li>dare maggiore visibilità alle proprie notifiche, laddove confluiscono
-in un contesto più ampio / nazionale</li>
-<li>richiamare le scadenze e facilitare i pagamenti in modo semplice e
-sicuro</li>
-<li>trasmettere gratuitamente comunicazioni multicanale (email, push
-notification)</li>
+<li>inviare comunicazioni elettroniche utilizzando solo il codice
+fiscale (senza dover chiedere l’indirizzo di contatto ai cittadini)</li>
+<li>non doversi occupare della gestione e dell’aggiornamento dei contatti</li>
+<li>dare maggiore autorevolezza alle proprie comunicazioni</li>
+<li>richiamare le scadenze e facilitare i pagamenti</li>
 <li>recuperare lo stato di inoltro della comunicazione
 e di lettura del messaggio (laddove il canale lo consente)</li>
 </ul>
@@ -230,7 +213,7 @@ e di lettura del messaggio (laddove il canale lo consente)</li>
   <div role="contentinfo">
     <p>
         &copy; Copyright CC-BY 4.0 - Agenzia per l&#39;Italia Digitale.
-      Ultimo aggiornamento 17/11/2017.
+      Ultimo aggiornamento 21/11/2017.
 
     </p>
   </div>
